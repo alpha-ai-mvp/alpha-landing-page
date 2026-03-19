@@ -3,61 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alpha | Portfolio control for serious investors</title>
+    <title>Portfolio OS | Portfolio control for serious investors</title>
     <meta
       name="description"
-      content="Portfolio control for serious investors. Track what needs attention now, thesis drift, concentration, and decision memory."
+      content="Portfolio OS by Alpha. Portfolio control for serious investors, built around review priorities, thesis drift, concentration, and decision memory."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page-shell">
       <section class="hero">
-        <div class="eyebrow">Early access for design partners</div>
+        <div class="hero-brand" aria-label="Product brand">
+          <span class="hero-brand-product">Portfolio OS</span>
+          <span class="hero-brand-parent">by Alpha</span>
+        </div>
         <h1>Portfolio control for serious investors.</h1>
-        <p class="hero-subtitle">
-          Turn your own portfolio rules into a live control system for what
-          needs attention now, thesis drift, concentration, and decision memory.
-        </p>
+        <div class="hero-thesis">
+          <p class="hero-subtitle">
+            Turn your portfolio rules into a live control system.
+          </p>
+          <p class="hero-support">
+            <span>Not a research terminal</span>
+            <span>Not an AI stock picker</span>
+          </p>
+        </div>
         <div class="hero-actions">
           <a href="#signup" class="button button-primary">Apply for early access</a>
-          <a href="#workflow" class="button button-secondary">See how it works</a>
-        </div>
-        <p class="hero-note">
-          Not a research terminal. Not an AI stock picker. A control workflow
-          for running a serious portfolio.
-        </p>
-
-        <div class="hero-diagram" aria-label="Portfolio control workflow">
-          <div class="diagram-node">
-            <span class="diagram-label">Monitor</span>
-            <span class="diagram-emphasis diagram-attention">What needs attention</span>
-          </div>
-          <div class="diagram-connector" aria-hidden="true"></div>
-          <div class="diagram-node">
-            <span class="diagram-label">Review</span>
-            <span class="diagram-emphasis diagram-drift">Where the thesis changed</span>
-          </div>
-          <div class="diagram-connector" aria-hidden="true"></div>
-          <div class="diagram-node">
-            <span class="diagram-label">Decide</span>
-            <span class="diagram-emphasis diagram-action">What changed and why</span>
-          </div>
-          <div class="diagram-connector" aria-hidden="true"></div>
-          <div class="diagram-node">
-            <span class="diagram-label">Control risk</span>
-            <span class="diagram-emphasis diagram-risk">When concentration matters</span>
-          </div>
         </div>
       </section>
 
       <section class="section section-divider" id="workflow">
         <div class="section-intro">
           <div class="eyebrow">How it works</div>
-          <h2>A policy-driven control system for the portfolio.</h2>
+          <h2>User-defined policy turns signals into action.</h2>
           <p>
-            User-defined rules turn review, drift, decisions, and concentration
-            into actions you can actually run.
+            You define which signals stay informational, which create reviews,
+            and which move straight into high-priority attention.
+          </p>
+        </div>
+
+        <div class="hero-diagram workflow-loop" aria-label="Portfolio control workflow">
+          <div class="hero-diagram-grid">
+            <div class="diagram-node">
+              <span class="diagram-label">Policy</span>
+              <span class="diagram-text">Define what stays informational, what creates review, and what becomes priority</span>
+            </div>
+            <div class="diagram-node">
+              <span class="diagram-label">Attention</span>
+              <span class="diagram-text">A working queue of ranked review items</span>
+            </div>
+            <div class="diagram-node">
+              <span class="diagram-label">Drift</span>
+              <span class="diagram-text">Signals that become suggested or automatic review</span>
+            </div>
+            <div class="diagram-node">
+              <span class="diagram-label">Decision</span>
+              <span class="diagram-text">Rationale carried forward into future review</span>
+            </div>
+            <div class="diagram-node">
+              <span class="diagram-label">Sizing</span>
+              <span class="diagram-text">Sizing and overlap rules that trigger action</span>
+            </div>
+            <div class="diagram-node">
+              <span class="diagram-label">Feedback</span>
+              <span class="diagram-text">Use outcomes to refine the policy over time</span>
+            </div>
+            <div class="diagram-center-note" aria-hidden="true">
+              <span class="diagram-center-label">Control loop</span>
+              <span class="diagram-center-text">Your rules drive review, action, and feedback.</span>
+            </div>
+            <div class="loop-segment loop-segment-1" aria-hidden="true"></div>
+            <div class="loop-segment loop-segment-2" aria-hidden="true"></div>
+            <div class="loop-segment loop-segment-3" aria-hidden="true"></div>
+            <div class="loop-segment loop-segment-4" aria-hidden="true"></div>
+            <div class="loop-segment loop-segment-5" aria-hidden="true"></div>
+            <div class="loop-segment loop-segment-6" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="workflow-demo-intro">
+          <p>
+            Below is a simplified product view showing how policy becomes a
+            working queue, how drift becomes review, and how decisions feed
+            future judgment.
           </p>
         </div>
 
@@ -68,10 +96,10 @@
               <span></span>
               <span></span>
             </div>
-            <div class="chrome-title">Alpha Control Workspace</div>
+            <div class="chrome-title">Portfolio OS</div>
             <div class="chrome-actions">
-              <span class="chrome-pill">Portfolio</span>
-              <span class="chrome-pill chrome-pill-muted">Review</span>
+              <span class="chrome-pill">Policy-driven</span>
+              <span class="chrome-pill chrome-pill-muted">Live control</span>
             </div>
           </div>
 
@@ -90,18 +118,18 @@
               <div class="overview-topline">
                 <div>
                   <div class="wireframe-kicker">Portfolio overview</div>
-                  <h3>What needs attention now</h3>
+                  <h3>The operating surface for portfolio review</h3>
                 </div>
                 <div class="overview-badge">12 positions</div>
               </div>
 
               <div class="overview-metrics">
               <div class="metric-card">
-                <span class="metric-label">Action queue</span>
+                <span class="metric-label">Rule triggers</span>
                 <strong class="metric-value metric-value-attention">3 now</strong>
               </div>
               <div class="metric-card">
-                <span class="metric-label">Thesis drift</span>
+                <span class="metric-label">Drift reviews</span>
                 <strong class="metric-value metric-value-drift">2 flags</strong>
                 </div>
                 <div class="metric-card">
@@ -109,7 +137,7 @@
                   <strong class="metric-value metric-value-action">5 recent</strong>
                 </div>
                 <div class="metric-card">
-                  <span class="metric-label">Concentration</span>
+                  <span class="metric-label">Sizing / overlap</span>
                   <strong class="metric-value metric-value-risk">Action needed</strong>
                 </div>
               </div>
@@ -125,23 +153,23 @@
                     </div>
                     <button type="button" class="portfolio-row portfolio-row-button portfolio-row-active" data-position="novo">
                       <span class="portfolio-name">Novo Nordisk</span>
-                      <span class="status-text status-attention">Review now</span>
+                      <span class="status-text status-attention">Review trigger</span>
                       <span class="portfolio-weight">14.8%</span>
                     </button>
                     <button type="button" class="portfolio-row portfolio-row-button" data-position="googl">
                       <span class="portfolio-name">Alphabet</span>
-                      <span class="status-text status-drift">Thesis drift</span>
+                      <span class="status-text status-drift">Drift review</span>
                       <span class="portfolio-weight">9.6%</span>
                     </button>
                     <button type="button" class="portfolio-row portfolio-row-button" data-position="tsmc">
                       <span class="portfolio-name">TSMC</span>
-                      <span class="status-text status-risk">Concentration</span>
+                      <span class="status-text status-risk">Sizing review</span>
                       <span class="portfolio-weight">8.9%</span>
                     </button>
                   </div>
                 </div>
 
-                <div class="portfolio-panel">
+              <div class="portfolio-panel">
                   <div class="wireframe-kicker">Risk snapshot</div>
                   <div class="risk-row">
                     <span>Top position weight</span>
@@ -154,6 +182,10 @@
                   <div class="risk-row">
                     <span>Names due now</span>
                     <strong class="metric-value metric-value-attention">3</strong>
+                  </div>
+                  <div class="risk-row">
+                    <span>Overlap breach</span>
+                    <strong class="metric-value metric-value-risk">2 linked names</strong>
                   </div>
                 </div>
               </div>
@@ -178,7 +210,7 @@
                   <strong id="detail-decisions" class="metric-value metric-value-action">3 decisions</strong>
                 </div>
                 <div class="metric-card">
-                  <span class="metric-label">Concentration</span>
+                  <span class="metric-label">Sizing / overlap</span>
                   <strong id="detail-concentration" class="metric-value metric-value-risk">Needs action</strong>
                 </div>
               </div>
@@ -201,7 +233,7 @@
               <div class="overview-topline">
                 <div>
                   <div class="wireframe-kicker">Review queue</div>
-                  <h3>What needs attention now and why</h3>
+                  <h3>The queue you run the workflow from</h3>
                 </div>
                 <div class="overview-badge">Rule-driven</div>
               </div>
@@ -211,21 +243,21 @@
                     <strong>Novo Nordisk</strong>
                     <span class="status-text status-attention">Review now</span>
                   </div>
-                  <p>Triggered by your review policy after margin-case pressure and elevated position weight.</p>
+                  <p>Auto-created by policy after a review trigger on thesis pressure and elevated sizing.</p>
                 </div>
                 <div class="queue-card">
                   <div class="queue-card-top">
                     <strong>Alphabet</strong>
                     <span class="status-text status-drift">Thesis drift</span>
                   </div>
-                  <p>Drift moved past the user-defined threshold and became a review item.</p>
+                  <p>Drift moved past the user-defined threshold and was promoted into the queue for review.</p>
                 </div>
                 <div class="queue-card">
                   <div class="queue-card-top">
-                    <strong>TSMC</strong>
-                    <span class="status-text status-risk">Concentration</span>
+                    <strong>TSMC + ASML</strong>
+                    <span class="status-text status-risk">Overlap / sizing</span>
                   </div>
-                  <p>Position size crossed the sizing rule and was pushed into the action queue.</p>
+                  <p>Exposure and overlap crossed the policy threshold and were pushed into high-priority attention.</p>
                 </div>
               </div>
             </div>
@@ -236,7 +268,7 @@
               <div class="overview-topline">
                 <div>
                   <div class="wireframe-kicker">Decision memory</div>
-                  <h3>Review decisions with the rationale still attached</h3>
+                  <h3>Past decisions carried into future review</h3>
                 </div>
                 <div class="overview-badge">5 recent</div>
               </div>
@@ -251,19 +283,19 @@
                   <span>Mar 18</span>
                   <span>Novo Nordisk</span>
                   <span class="memory-decision">Hold / Review</span>
-                  <span>Margin case weakening; sizing still under review for the next thesis review.</span>
+                  <span>Margin case weakening; carried forward into the next thesis review and sizing decision.</span>
                 </div>
                 <div class="memory-row">
                   <span>Mar 12</span>
                   <span>Alphabet</span>
                   <span class="memory-decision">Trim</span>
-                  <span>Recovery case lagging while better uses of capital appeared for the portfolio.</span>
+                  <span>Recovery case lagging; rationale preserved for the next review of capital allocation.</span>
                 </div>
                 <div class="memory-row">
                   <span>Mar 05</span>
                   <span>TSMC</span>
                   <span class="memory-decision">Hold</span>
-                  <span>Position remains high conviction, but concentration moved closer to the policy limit.</span>
+                  <span>Position remained high conviction, but sizing and overlap moved closer to the policy limit.</span>
                 </div>
               </div>
             </div>
@@ -274,13 +306,14 @@
               <div class="overview-topline">
                 <div>
                   <div class="wireframe-kicker">Policy settings</div>
-                  <h3>Turn your own portfolio rules into a live control system</h3>
+                  <h3>Define the rules that run your control workflow</h3>
                 </div>
                 <div class="overview-badge">User-defined</div>
               </div>
               <p class="mock-panel-intro">
-                This is the control layer: your own review, drift, concentration,
-                and decision rules turned into a system that keeps running.
+                This is configurable by the investor, not hard-coded by the
+                product. You decide which conditions stay informational, which
+                create a review, and which move into higher-priority attention.
               </p>
               <div class="policy-grid">
                 <div class="policy-card">
@@ -306,10 +339,17 @@
                 </div>
                 <div class="policy-card">
                   <div class="policy-card-top">
+                    <strong>Overlap threshold</strong>
+                    <span class="policy-value">High</span>
+                  </div>
+                  <p>Escalate linked exposures when overlap creates a higher-priority review item.</p>
+                </div>
+                <div class="policy-card">
+                  <div class="policy-card-top">
                     <strong>Decision retention</strong>
                     <span class="policy-value">Always on</span>
                   </div>
-                  <p>Keep adds, trims, holds, and exits attached to the position for future review.</p>
+                  <p>Keep adds, trims, holds, and exits attached to the position so future review has context.</p>
                 </div>
               </div>
             </div>
@@ -325,7 +365,7 @@
 
         <div class="compare-band">
           <div class="compare-head compare-head-left">Today</div>
-          <div class="compare-head compare-head-right">With Alpha</div>
+          <div class="compare-head compare-head-right">With Portfolio OS</div>
 
           <div class="compare-item compare-item-negative">
             <div class="compare-copy">
@@ -349,7 +389,7 @@
           <div class="compare-item compare-item-positive">
             <div class="compare-copy">
               <strong>Action queue</strong>
-              <span>One queue that tells you what needs attention now and why.</span>
+              <span>One working queue that tells you what needs review now, why it is here, and what to do next.</span>
             </div>
           </div>
 
@@ -362,7 +402,7 @@
           <div class="compare-item compare-item-positive">
             <div class="compare-copy">
               <strong>Drift in context</strong>
-              <span>Thesis drift tied directly to the position and converted into review.</span>
+              <span>Thesis drift tied directly to the position and converted into suggested or automatic review.</span>
             </div>
           </div>
 
@@ -375,7 +415,7 @@
           <div class="compare-item compare-item-positive">
             <div class="compare-copy">
               <strong>Decision memory</strong>
-              <span>Decision memory stays attached to future review and position context.</span>
+              <span>Decision memory stays attached to future review, so past judgment informs the next decision.</span>
             </div>
           </div>
 
@@ -388,7 +428,7 @@
           <div class="compare-item compare-item-positive">
             <div class="compare-copy">
               <strong>Rule-based concentration</strong>
-              <span>Concentration rules that trigger review and sizing action when limits are pushed.</span>
+              <span>Sizing and overlap rules that trigger review and higher-priority action when limits are pushed.</span>
             </div>
           </div>
 
@@ -401,7 +441,7 @@
           <div class="compare-item compare-item-positive">
             <div class="compare-copy">
               <strong>AI-ready structure</strong>
-              <span>Structured to connect cleanly into AI and agent workflows without losing control.</span>
+              <span>Structured to support AI and agent workflows without giving up control.</span>
             </div>
           </div>
         </div>
@@ -411,19 +451,32 @@
         <div class="section-intro">
           <div class="eyebrow">What is different</div>
           <h2>What makes this different from existing products?</h2>
-          <p>
-            Most investing tools help you find information, analyze securities,
-            or monitor portfolio data.
-          </p>
-          <p>
-            Alpha is built for a different job: turning your own portfolio rules
-            into a live control system for review, thesis drift, concentration,
-            and decision memory.
-          </p>
-          <p>
-            It is not trying to replace your research stack. It is built to make
-            portfolio control executable.
-          </p>
+        </div>
+        <div class="difference-grid" aria-label="How Portfolio OS differs from existing products">
+          <div class="difference-card difference-card-muted">
+            <div class="difference-label">Most existing products</div>
+            <h3>Built for information, analysis, and monitoring.</h3>
+            <p>
+              They help you find information, analyze securities, or monitor
+              portfolio data.
+            </p>
+          </div>
+          <div class="difference-card difference-card-accent">
+            <div class="difference-label">Portfolio OS</div>
+            <h3>Built for portfolio control.</h3>
+            <p>
+              It turns your own portfolio rules into a live system for review,
+              thesis drift, concentration, overlap, and decision memory.
+            </p>
+          </div>
+          <div class="difference-card difference-card-full">
+            <div class="difference-label">What that means</div>
+            <p>
+              Portfolio OS is not trying to replace your research stack. It is
+              the control layer that makes portfolio review and decisions
+              executable.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -431,24 +484,36 @@
         <div class="section-intro">
           <div class="eyebrow">Current stage</div>
           <h2>Early, focused, and still taking shape.</h2>
-          <p>
-            This is an early product for serious investors who already feel
-            this workflow problem in practice.
-          </p>
-          <p>
-            There is already an analytics product at
-            <a href="https://alphaanalytics.org/" class="inline-link">alphaanalytics.org</a>.
-            That product is focused on analytics. Alpha is the next layer:
-            portfolio control, review workflow, thesis drift, concentration,
-            and decision memory.
-          </p>
         </div>
-        <div class="stage-cta">
-          <p>
-            Good fit: serious investors who want more discipline around review,
-            risk, and decisions.
-          </p>
-          <a href="#signup" class="button button-primary">Become a design partner</a>
+        <div class="stage-grid">
+          <div class="stage-card">
+            <div class="difference-label">Stage</div>
+            <h3>Built with a small group of early design partners.</h3>
+            <p>
+              Portfolio OS is being shaped with serious investors who already
+              feel this workflow problem in practice.
+            </p>
+          </div>
+          <div class="stage-card">
+            <div class="difference-label">Product family</div>
+            <h3>Alpha Analytics for analytics. Portfolio OS for control.</h3>
+            <p>
+              <a href="https://alphaanalytics.org/" class="inline-link">Alpha Analytics</a>
+              is the analytics product in the Alpha product family. Portfolio OS
+              is the portfolio-control product, focused on review workflow,
+              thesis drift, concentration, overlap, and decision memory.
+            </p>
+          </div>
+          <div class="stage-card stage-card-cta">
+            <div>
+              <div class="difference-label">Best fit</div>
+              <p>
+                Serious investors who want more discipline around review, risk,
+                and decisions.
+              </p>
+            </div>
+            <a href="#signup" class="button button-primary">Become a design partner</a>
+          </div>
         </div>
       </section>
 
@@ -463,7 +528,7 @@
           action="https://formspree.io/f/mdawbgey"
           method="POST"
         >
-          <input type="hidden" name="_subject" value="New Alpha early access request" />
+          <input type="hidden" name="_subject" value="New Portfolio OS early access request" />
           <input type="hidden" name="_next" value="./thank-you.html" />
           <input type="hidden" name="_captcha" value="false" />
           <div class="form-grid">

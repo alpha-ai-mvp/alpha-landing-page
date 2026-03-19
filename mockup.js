@@ -1,7 +1,7 @@
 const positionData = {
   novo: {
     name: "Novo Nordisk",
-    statusText: "Needs review",
+    statusText: "Review trigger",
     statusClass: "status-pill status-pill-attention",
     thesis: "Drifting",
     thesisClass: "metric-value metric-value-drift",
@@ -10,29 +10,29 @@ const positionData = {
     concentration: "Needs action",
     concentrationClass: "metric-value metric-value-risk",
     change:
-      "Pricing pressure is weakening part of the original margin case.",
+      "Pricing pressure weakened part of the original margin case and triggered a policy review.",
     action:
-      "Re-underwrite the case and decide whether sizing still fits.",
+      "Re-underwrite the case, resolve the review, and decide whether sizing still fits.",
   },
   googl: {
     name: "Alphabet",
-    statusText: "Thesis drift",
-    statusClass: "status-pill",
-    thesis: "Questioned",
+    statusText: "Drift review",
+    statusClass: "status-pill status-pill-drift",
+    thesis: "Drifting",
     thesisClass: "metric-value metric-value-drift",
     decisions: "2 decisions",
     decisionClass: "metric-value metric-value-action",
     concentration: "Within range",
     concentrationClass: "metric-value",
     change:
-      "Ad-cycle recovery is weaker than the original review expected.",
+      "Ad-cycle recovery is weaker than the original review expected and now qualifies as thesis drift.",
     action:
-      "Revisit the underwriting case and confirm whether capital still belongs here.",
+      "Run the drift review and confirm whether capital still belongs here.",
   },
   tsmc: {
     name: "TSMC",
-    statusText: "Concentration",
-    statusClass: "status-pill",
+    statusText: "Sizing review",
+    statusClass: "status-pill status-pill-risk",
     thesis: "Holding",
     thesisClass: "metric-value",
     decisions: "1 decision",
@@ -40,9 +40,9 @@ const positionData = {
     concentration: "High",
     concentrationClass: "metric-value metric-value-risk",
     change:
-      "Position quality remains strong, but size is moving close to the policy limit.",
+      "Position quality remains strong, but sizing and related overlap moved close to the policy limit.",
     action:
-      "Review whether sizing should be trimmed before concentration pushes further.",
+      "Review whether sizing should be trimmed before the breach becomes a higher-priority action.",
   },
 };
 
