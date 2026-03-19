@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha | Portfolio control for serious investors</title>
+    <meta
+      name="description"
+      content="Portfolio control for serious investors. Track what needs attention now, thesis drift, concentration, and decision memory."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="eyebrow">Early access for design partners</div>
+        <h1>Portfolio control for serious investors.</h1>
+        <p class="hero-subtitle">
+          Turn your own portfolio rules into a live control system for what
+          needs attention now, thesis drift, concentration, and decision memory.
+        </p>
+        <div class="hero-actions">
+          <a href="#signup" class="button button-primary">Apply for early access</a>
+          <a href="#workflow" class="button button-secondary">See how it works</a>
+        </div>
+        <p class="hero-note">
+          Not a research terminal. Not an AI stock picker. A control workflow
+          for running a serious portfolio.
+        </p>
+
+        <div class="hero-diagram" aria-label="Portfolio control workflow">
+          <div class="diagram-node">
+            <span class="diagram-label">Monitor</span>
+            <span class="diagram-emphasis diagram-attention">What needs attention</span>
+          </div>
+          <div class="diagram-connector" aria-hidden="true"></div>
+          <div class="diagram-node">
+            <span class="diagram-label">Review</span>
+            <span class="diagram-emphasis diagram-drift">Where the thesis changed</span>
+          </div>
+          <div class="diagram-connector" aria-hidden="true"></div>
+          <div class="diagram-node">
+            <span class="diagram-label">Decide</span>
+            <span class="diagram-emphasis diagram-action">What changed and why</span>
+          </div>
+          <div class="diagram-connector" aria-hidden="true"></div>
+          <div class="diagram-node">
+            <span class="diagram-label">Control risk</span>
+            <span class="diagram-emphasis diagram-risk">When concentration matters</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-divider" id="workflow">
+        <div class="section-intro">
+          <div class="eyebrow">How it works</div>
+          <h2>A policy-driven control system for the portfolio.</h2>
+          <p>
+            User-defined rules turn review, drift, decisions, and concentration
+            into actions you can actually run.
+          </p>
+        </div>
+
+        <div class="product-wireframe" aria-label="Simplified product view">
+          <div class="app-chrome">
+            <div class="chrome-dots" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="chrome-title">Alpha Control Workspace</div>
+            <div class="chrome-actions">
+              <span class="chrome-pill">Portfolio</span>
+              <span class="chrome-pill chrome-pill-muted">Review</span>
+            </div>
+          </div>
+
+          <div class="app-toolbar">
+            <div class="toolbar-tabs">
+              <button type="button" class="toolbar-tab toolbar-tab-active" data-view="control">Control Center</button>
+              <button type="button" class="toolbar-tab" data-view="queue">Review Queue</button>
+              <button type="button" class="toolbar-tab" data-view="memory">Decision Memory</button>
+              <button type="button" class="toolbar-tab" data-view="policy">Policy Settings</button>
+            </div>
+            <div class="toolbar-meta">Updated 8 min ago</div>
+          </div>
+
+          <div class="mock-view mock-view-active" data-view-panel="control">
+            <div class="portfolio-overview">
+              <div class="overview-topline">
+                <div>
+                  <div class="wireframe-kicker">Portfolio overview</div>
+                  <h3>What needs attention now</h3>
+                </div>
+                <div class="overview-badge">12 positions</div>
+              </div>
+
+              <div class="overview-metrics">
+              <div class="metric-card">
+                <span class="metric-label">Action queue</span>
+                <strong class="metric-value metric-value-attention">3 now</strong>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Thesis drift</span>
+                <strong class="metric-value metric-value-drift">2 flags</strong>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Decision memory</span>
+                  <strong class="metric-value metric-value-action">5 recent</strong>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Concentration</span>
+                  <strong class="metric-value metric-value-risk">Action needed</strong>
+                </div>
+              </div>
+
+              <div class="portfolio-grid">
+              <div class="portfolio-panel portfolio-table-panel">
+                <div class="wireframe-kicker">Review queue</div>
+                <div class="portfolio-table">
+                    <div class="portfolio-row portfolio-row-head">
+                      <span>Position</span>
+                      <span>Status</span>
+                      <span>Weight</span>
+                    </div>
+                    <button type="button" class="portfolio-row portfolio-row-button portfolio-row-active" data-position="novo">
+                      <span class="portfolio-name">Novo Nordisk</span>
+                      <span class="status-text status-attention">Review now</span>
+                      <span class="portfolio-weight">14.8%</span>
+                    </button>
+                    <button type="button" class="portfolio-row portfolio-row-button" data-position="googl">
+                      <span class="portfolio-name">Alphabet</span>
+                      <span class="status-text status-drift">Thesis drift</span>
+                      <span class="portfolio-weight">9.6%</span>
+                    </button>
+                    <button type="button" class="portfolio-row portfolio-row-button" data-position="tsmc">
+                      <span class="portfolio-name">TSMC</span>
+                      <span class="status-text status-risk">Concentration</span>
+                      <span class="portfolio-weight">8.9%</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="portfolio-panel">
+                  <div class="wireframe-kicker">Risk snapshot</div>
+                  <div class="risk-row">
+                    <span>Top position weight</span>
+                    <strong class="metric-value metric-value-risk">14.8%</strong>
+                  </div>
+                  <div class="risk-row">
+                    <span>Top 5 concentration</span>
+                    <strong class="metric-value metric-value-risk">52%</strong>
+                  </div>
+                  <div class="risk-row">
+                    <span>Names due now</span>
+                    <strong class="metric-value metric-value-attention">3</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wireframe-main position-detail">
+              <div class="wireframe-topline">
+                <div>
+                  <div class="wireframe-kicker">Position detail</div>
+                  <h3 id="detail-name">Novo Nordisk</h3>
+                </div>
+                <div id="detail-status" class="status-pill status-pill-attention">Needs review</div>
+              </div>
+
+              <div class="wireframe-metrics">
+                <div class="metric-card">
+                  <span class="metric-label">Thesis</span>
+                  <strong id="detail-thesis" class="metric-value metric-value-drift">Drifting</strong>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Decision memory</span>
+                  <strong id="detail-decisions" class="metric-value metric-value-action">3 decisions</strong>
+                </div>
+                <div class="metric-card">
+                  <span class="metric-label">Concentration</span>
+                  <strong id="detail-concentration" class="metric-value metric-value-risk">Needs action</strong>
+                </div>
+              </div>
+
+              <div class="wireframe-panel-grid">
+                <div class="wireframe-panel">
+                  <div class="wireframe-kicker">What changed</div>
+                  <p id="detail-change">Pricing pressure is weakening part of the original margin case.</p>
+                </div>
+                <div class="wireframe-panel">
+                  <div class="wireframe-kicker">Decision in context</div>
+                  <p id="detail-action">Re-underwrite the case and decide whether sizing still fits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-view" data-view-panel="queue">
+            <div class="mock-single-panel">
+              <div class="overview-topline">
+                <div>
+                  <div class="wireframe-kicker">Review queue</div>
+                  <h3>What needs attention now and why</h3>
+                </div>
+                <div class="overview-badge">Rule-driven</div>
+              </div>
+              <div class="queue-cards">
+                <div class="queue-card">
+                  <div class="queue-card-top">
+                    <strong>Novo Nordisk</strong>
+                    <span class="status-text status-attention">Review now</span>
+                  </div>
+                  <p>Triggered by your review policy after margin-case pressure and elevated position weight.</p>
+                </div>
+                <div class="queue-card">
+                  <div class="queue-card-top">
+                    <strong>Alphabet</strong>
+                    <span class="status-text status-drift">Thesis drift</span>
+                  </div>
+                  <p>Drift moved past the user-defined threshold and became a review item.</p>
+                </div>
+                <div class="queue-card">
+                  <div class="queue-card-top">
+                    <strong>TSMC</strong>
+                    <span class="status-text status-risk">Concentration</span>
+                  </div>
+                  <p>Position size crossed the sizing rule and was pushed into the action queue.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-view" data-view-panel="memory">
+            <div class="mock-single-panel">
+              <div class="overview-topline">
+                <div>
+                  <div class="wireframe-kicker">Decision memory</div>
+                  <h3>Review decisions with the rationale still attached</h3>
+                </div>
+                <div class="overview-badge">5 recent</div>
+              </div>
+              <div class="memory-table">
+                <div class="memory-row memory-row-head">
+                  <span>Date</span>
+                  <span>Position</span>
+                  <span>Decision</span>
+                  <span>Reason</span>
+                </div>
+                <div class="memory-row">
+                  <span>Mar 18</span>
+                  <span>Novo Nordisk</span>
+                  <span class="memory-decision">Hold / Review</span>
+                  <span>Margin case weakening; sizing still under review for the next thesis review.</span>
+                </div>
+                <div class="memory-row">
+                  <span>Mar 12</span>
+                  <span>Alphabet</span>
+                  <span class="memory-decision">Trim</span>
+                  <span>Recovery case lagging while better uses of capital appeared for the portfolio.</span>
+                </div>
+                <div class="memory-row">
+                  <span>Mar 05</span>
+                  <span>TSMC</span>
+                  <span class="memory-decision">Hold</span>
+                  <span>Position remains high conviction, but concentration moved closer to the policy limit.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-view" data-view-panel="policy">
+            <div class="mock-single-panel">
+              <div class="overview-topline">
+                <div>
+                  <div class="wireframe-kicker">Policy settings</div>
+                  <h3>Turn your own portfolio rules into a live control system</h3>
+                </div>
+                <div class="overview-badge">User-defined</div>
+              </div>
+              <p class="mock-panel-intro">
+                This is the control layer: your own review, drift, concentration,
+                and decision rules turned into a system that keeps running.
+              </p>
+              <div class="policy-grid">
+                <div class="policy-card">
+                  <div class="policy-card-top">
+                    <strong>Review cadence</strong>
+                    <span class="policy-value">30 days</span>
+                  </div>
+                  <p>Trigger review if a core position has not been revisited in 30 days.</p>
+                </div>
+                <div class="policy-card">
+                  <div class="policy-card-top">
+                    <strong>Drift threshold</strong>
+                    <span class="policy-value">Medium</span>
+                  </div>
+                  <p>Escalate when thesis evidence no longer matches the original case.</p>
+                </div>
+                <div class="policy-card">
+                  <div class="policy-card-top">
+                    <strong>Single-name concentration</strong>
+                    <span class="policy-value">12%</span>
+                  </div>
+                  <p>Flag any position that crosses the sizing rule and push it into review.</p>
+                </div>
+                <div class="policy-card">
+                  <div class="policy-card-top">
+                    <strong>Decision retention</strong>
+                    <span class="policy-value">Always on</span>
+                  </div>
+                  <p>Keep adds, trims, holds, and exits attached to the position for future review.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-divider section-soft">
+        <div class="section-intro">
+          <div class="eyebrow">Why it matters</div>
+          <h2>Most investors already have information. What they lack is control.</h2>
+        </div>
+
+        <div class="compare-band">
+          <div class="compare-head compare-head-left">Today</div>
+          <div class="compare-head compare-head-right">With Alpha</div>
+
+          <div class="compare-item compare-item-negative">
+            <div class="compare-copy">
+              <strong>Fragmented workflow</strong>
+              <span>Research tools, portfolio tools, docs, and notes still do not add up to one control process.</span>
+            </div>
+          </div>
+          <div class="compare-item compare-item-positive">
+            <div class="compare-copy">
+              <strong>One control layer</strong>
+              <span>Bring research, review, decisions, and risk into one operating workflow.</span>
+            </div>
+          </div>
+
+          <div class="compare-item compare-item-negative">
+            <div class="compare-copy">
+              <strong>Passive reminders</strong>
+              <span>Signals exist, but it is still hard to know what needs attention now.</span>
+            </div>
+          </div>
+          <div class="compare-item compare-item-positive">
+            <div class="compare-copy">
+              <strong>Action queue</strong>
+              <span>One queue that tells you what needs attention now and why.</span>
+            </div>
+          </div>
+
+          <div class="compare-item compare-item-negative">
+            <div class="compare-copy">
+              <strong>Drift noticed late</strong>
+              <span>Thesis change is visible in pieces, but not as a clear review trigger.</span>
+            </div>
+          </div>
+          <div class="compare-item compare-item-positive">
+            <div class="compare-copy">
+              <strong>Drift in context</strong>
+              <span>Thesis drift tied directly to the position and converted into review.</span>
+            </div>
+          </div>
+
+          <div class="compare-item compare-item-negative">
+            <div class="compare-copy">
+              <strong>Rationale gets buried</strong>
+              <span>Decisions live across notes, chats, and scattered updates, which makes later review weak.</span>
+            </div>
+          </div>
+          <div class="compare-item compare-item-positive">
+            <div class="compare-copy">
+              <strong>Decision memory</strong>
+              <span>Decision memory stays attached to future review and position context.</span>
+            </div>
+          </div>
+
+          <div class="compare-item compare-item-negative">
+            <div class="compare-copy">
+              <strong>Risk without action</strong>
+              <span>Concentration can be monitored, but it still does not reliably trigger sizing review.</span>
+            </div>
+          </div>
+          <div class="compare-item compare-item-positive">
+            <div class="compare-copy">
+              <strong>Rule-based concentration</strong>
+              <span>Concentration rules that trigger review and sizing action when limits are pushed.</span>
+            </div>
+          </div>
+
+          <div class="compare-item compare-item-negative">
+            <div class="compare-copy">
+              <strong>Disconnected workflows</strong>
+              <span>Research tools, portfolio tools, and AI workflows still do not operate as one control loop.</span>
+            </div>
+          </div>
+          <div class="compare-item compare-item-positive">
+            <div class="compare-copy">
+              <strong>AI-ready structure</strong>
+              <span>Structured to connect cleanly into AI and agent workflows without losing control.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-divider">
+        <div class="section-intro">
+          <div class="eyebrow">What is different</div>
+          <h2>What makes this different from existing products?</h2>
+          <p>
+            Most investing tools help you find information, analyze securities,
+            or monitor portfolio data.
+          </p>
+          <p>
+            Alpha is built for a different job: turning your own portfolio rules
+            into a live control system for review, thesis drift, concentration,
+            and decision memory.
+          </p>
+          <p>
+            It is not trying to replace your research stack. It is built to make
+            portfolio control executable.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-divider" id="stage">
+        <div class="section-intro">
+          <div class="eyebrow">Current stage</div>
+          <h2>Early, focused, and still taking shape.</h2>
+          <p>
+            This is an early product for serious investors who already feel
+            this workflow problem in practice.
+          </p>
+          <p>
+            There is already an analytics product at
+            <a href="https://alphaanalytics.org/" class="inline-link">alphaanalytics.org</a>.
+            That product is focused on analytics. Alpha is the next layer:
+            portfolio control, review workflow, thesis drift, concentration,
+            and decision memory.
+          </p>
+        </div>
+        <div class="stage-cta">
+          <p>
+            Good fit: serious investors who want more discipline around review,
+            risk, and decisions.
+          </p>
+          <a href="#signup" class="button button-primary">Become a design partner</a>
+        </div>
+      </section>
+
+      <section class="section section-divider section-form" id="signup">
+        <div class="section-intro">
+          <div class="eyebrow">Request access</div>
+          <h2>Request early access.</h2>
+          <p>Leave your details below if this matches how you already run your portfolio.</p>
+        </div>
+        <form
+          class="signup-form"
+          action="https://formspree.io/f/mdawbgey"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Alpha early access request" />
+          <input type="hidden" name="_next" value="./thank-you.html" />
+          <input type="hidden" name="_captcha" value="false" />
+          <div class="form-grid">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <label>
+            How do you manage your portfolio today?
+            <textarea
+              name="workflow"
+              rows="4"
+              placeholder="Notes, spreadsheets, research tools, custom systems, or some mix."
+              required
+            ></textarea>
+          </label>
+          <label>
+            What is hardest to stay on top of right now?
+            <textarea
+              name="pain"
+              rows="4"
+              placeholder="Review priorities, thesis drift, concentration risk, decision history, or something else."
+            ></textarea>
+          </label>
+          <label>
+            Are you open to a short call?
+            <select name="callInterest">
+              <option>Yes</option>
+              <option>Maybe</option>
+              <option>No</option>
+            </select>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="button button-primary">Request access</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="./mockup.js"></script>
+  </body>
+</html>
