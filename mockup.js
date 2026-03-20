@@ -93,4 +93,26 @@ document.querySelectorAll(".portfolio-row-button").forEach((button) => {
   });
 });
 
+const compareShineCooldownMs = 30000;
+
+document.querySelectorAll(".compare-item-positive").forEach((item) => {
+  let lastShineAt = 0;
+
+  item.addEventListener("mouseenter", () => {
+    const now = Date.now();
+    if (now - lastShineAt < compareShineCooldownMs) return;
+
+    lastShineAt = now;
+    item.classList.remove("compare-shine");
+    void item.offsetWidth;
+    item.classList.add("compare-shine");
+  });
+
+  item.addEventListener("animationend", (event) => {
+    if (event.animationName === "compareRowShine") {
+      item.classList.remove("compare-shine");
+    }
+  });
+});
+
 setActivePosition("novo");

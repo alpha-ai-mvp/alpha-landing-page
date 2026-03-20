@@ -8,6 +8,12 @@
       name="description"
       content="Portfolio OS by Alpha. Portfolio control for serious investors, built around review priorities, thesis drift, concentration, and decision memory."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -17,14 +23,15 @@
           <span class="hero-brand-product">Portfolio OS</span>
           <span class="hero-brand-parent">by Alpha</span>
         </div>
-        <h1>Portfolio control for serious investors.</h1>
+        <h1>Run your portfolio like a system, not a checklist.</h1>
         <div class="hero-thesis">
           <p class="hero-subtitle">
-            Turn your portfolio rules into a live control system.
+            Portfolio OS turns your investment rules into a live control system that tells you what needs review, why it matters, and what to do next.
           </p>
           <p class="hero-support">
             <span>Not a research terminal</span>
-            <span>Not an AI stock picker</span>
+            <span>Not a stock picker</span>
+            <span>Built for portfolio control</span>
           </p>
         </div>
         <div class="hero-actions">
@@ -35,57 +42,81 @@
       <section class="section section-divider" id="workflow">
         <div class="section-intro">
           <div class="eyebrow">How it works</div>
-          <h2>User-defined policy turns signals into action.</h2>
+          <h2>Your rules decide what matters. The system turns it into action.</h2>
           <p>
-            You define which signals stay informational, which create reviews,
-            and which move straight into high-priority attention.
+            You define what stays informational, what triggers review, and what
+            becomes high-priority attention.
           </p>
         </div>
 
         <div class="hero-diagram workflow-loop" aria-label="Portfolio control workflow">
           <div class="hero-diagram-grid">
-            <div class="diagram-node">
-              <span class="diagram-label">Policy</span>
-              <span class="diagram-text">Define what stays informational, what creates review, and what becomes priority</span>
+            <div class="loop-ring" aria-hidden="true">
+              <div class="loop-segment loop-segment-1"></div>
+              <div class="loop-segment loop-segment-2"></div>
+              <div class="loop-segment loop-segment-3"></div>
+              <div class="loop-segment loop-segment-4"></div>
+              <div class="loop-segment loop-segment-5"></div>
+              <div class="loop-segment loop-segment-6"></div>
             </div>
-            <div class="diagram-node">
-              <span class="diagram-label">Attention</span>
-              <span class="diagram-text">A working queue of ranked review items</span>
+            <div class="orbit orbit-1">
+              <div class="diagram-node-frame">
+                <div class="diagram-node">
+                  <span class="diagram-label">Policy</span>
+                  <span class="diagram-text">Define what stays informational, what creates review, and what becomes priority</span>
+                </div>
+              </div>
             </div>
-            <div class="diagram-node">
-              <span class="diagram-label">Drift</span>
-              <span class="diagram-text">Signals that become suggested or automatic review</span>
+            <div class="orbit orbit-2">
+              <div class="diagram-node-frame">
+                <div class="diagram-node">
+                  <span class="diagram-label">Attention</span>
+                  <span class="diagram-text">A working queue of ranked review items</span>
+                </div>
+              </div>
             </div>
-            <div class="diagram-node">
-              <span class="diagram-label">Decision</span>
-              <span class="diagram-text">Rationale carried forward into future review</span>
+            <div class="orbit orbit-3">
+              <div class="diagram-node-frame">
+                <div class="diagram-node">
+                  <span class="diagram-label">Drift</span>
+                  <span class="diagram-text">Signals that become suggested or automatic review</span>
+                </div>
+              </div>
             </div>
-            <div class="diagram-node">
-              <span class="diagram-label">Sizing</span>
-              <span class="diagram-text">Sizing and overlap rules that trigger action</span>
+            <div class="orbit orbit-4">
+              <div class="diagram-node-frame">
+                <div class="diagram-node">
+                  <span class="diagram-label">Decision</span>
+                  <span class="diagram-text">Rationale carried forward into future review</span>
+                </div>
+              </div>
             </div>
-            <div class="diagram-node">
-              <span class="diagram-label">Feedback</span>
-              <span class="diagram-text">Use outcomes to refine the policy over time</span>
+            <div class="orbit orbit-5">
+              <div class="diagram-node-frame">
+                <div class="diagram-node">
+                  <span class="diagram-label">Sizing</span>
+                  <span class="diagram-text">Sizing and overlap rules that trigger action</span>
+                </div>
+              </div>
+            </div>
+            <div class="orbit orbit-6">
+              <div class="diagram-node-frame">
+                <div class="diagram-node">
+                  <span class="diagram-label">Feedback</span>
+                  <span class="diagram-text">Use outcomes to refine the policy over time</span>
+                </div>
+              </div>
             </div>
             <div class="diagram-center-note" aria-hidden="true">
               <span class="diagram-center-label">Control loop</span>
               <span class="diagram-center-text">Your rules drive review, action, and feedback.</span>
             </div>
-            <div class="loop-segment loop-segment-1" aria-hidden="true"></div>
-            <div class="loop-segment loop-segment-2" aria-hidden="true"></div>
-            <div class="loop-segment loop-segment-3" aria-hidden="true"></div>
-            <div class="loop-segment loop-segment-4" aria-hidden="true"></div>
-            <div class="loop-segment loop-segment-5" aria-hidden="true"></div>
-            <div class="loop-segment loop-segment-6" aria-hidden="true"></div>
           </div>
         </div>
 
         <div class="workflow-demo-intro">
           <p>
-            Below is a simplified product view showing how policy becomes a
-            working queue, how drift becomes review, and how decisions feed
-            future judgment.
+            This is what it looks like to run your portfolio inside Portfolio OS.
           </p>
         </div>
 
@@ -355,6 +386,31 @@
             </div>
           </div>
         </div>
+
+        <div class="section-intro section-intro-compact">
+          <div class="eyebrow">Core workflow</div>
+          <h2>Everything runs through the Review Queue.</h2>
+          <p>
+            The Review Queue is the operating surface of Portfolio OS. It tells
+            you what needs review now, why it is there, what changed, and what
+            action is required.
+          </p>
+          <p class="section-intro-emphasis">
+            Not notifications. Not reminders. A working system for running the
+            portfolio.
+          </p>
+        </div>
+
+        <div class="section-intro section-intro-compact">
+          <div class="eyebrow">Example</div>
+          <h2>How a review gets created</h2>
+          <p>
+            A position drifts from your thesis and also moves beyond your sizing
+            rule. Portfolio OS creates a review item, raises its priority,
+            brings back the original rationale, and helps you decide whether to
+            hold, trim, or exit.
+          </p>
+        </div>
       </section>
 
       <section class="section section-divider section-soft">
@@ -450,14 +506,14 @@
       <section class="section section-divider">
         <div class="section-intro">
           <div class="eyebrow">What is different</div>
-          <h2>What makes this different from existing products?</h2>
+          <h2>Most tools help you understand your portfolio. Portfolio OS helps you run it.</h2>
         </div>
         <div class="difference-grid" aria-label="How Portfolio OS differs from existing products">
           <div class="difference-card difference-card-muted">
             <div class="difference-label">Most existing products</div>
             <h3>Built for information, analysis, and monitoring.</h3>
             <p>
-              They help you find information, analyze securities, or monitor
+              They help you research positions, analyze securities, and monitor
               portfolio data.
             </p>
           </div>
@@ -465,14 +521,14 @@
             <div class="difference-label">Portfolio OS</div>
             <h3>Built for portfolio control.</h3>
             <p>
-              It turns your own portfolio rules into a live system for review,
+              It turns your portfolio rules into a live system for review,
               thesis drift, concentration, overlap, and decision memory.
             </p>
           </div>
           <div class="difference-card difference-card-full">
             <div class="difference-label">What that means</div>
             <p>
-              Portfolio OS is not trying to replace your research stack. It is
+              Portfolio OS does not replace your research stack. It is
               the control layer that makes portfolio review and decisions
               executable.
             </p>
@@ -508,8 +564,8 @@
             <div>
               <div class="difference-label">Best fit</div>
               <p>
-                Serious investors who want more discipline around review, risk,
-                and decisions.
+                Serious investors who want more discipline in review, risk, and
+                decision-making.
               </p>
             </div>
             <a href="#signup" class="button button-primary">Become a design partner</a>
@@ -521,12 +577,13 @@
         <div class="section-intro">
           <div class="eyebrow">Request access</div>
           <h2>Request early access.</h2>
-          <p>Leave your details below if this matches how you already run your portfolio.</p>
+          <p>Leave your details below if this matches the way you already manage your portfolio.</p>
         </div>
         <form
           class="signup-form"
           action="https://formspree.io/f/mdawbgey"
           method="POST"
+          autocomplete="off"
         >
           <input type="hidden" name="_subject" value="New Portfolio OS early access request" />
           <input type="hidden" name="_next" value="./thank-you.html" />
@@ -534,11 +591,11 @@
           <div class="form-grid">
             <label>
               Name
-              <input type="text" name="name" placeholder="Your name" required />
+              <input type="text" name="name" placeholder="Your name" required autocomplete="off" autocapitalize="words" spellcheck="false" />
             </label>
             <label>
               Email
-              <input type="email" name="email" placeholder="you@example.com" required />
+              <input type="email" name="email" placeholder="you@example.com" required autocomplete="off" autocapitalize="off" spellcheck="false" />
             </label>
           </div>
           <label>
@@ -546,7 +603,7 @@
             <textarea
               name="workflow"
               rows="4"
-              placeholder="Notes, spreadsheets, research tools, custom systems, or some mix."
+              placeholder="Notes, spreadsheets, research tools, custom systems, or a mix."
               required
             ></textarea>
           </label>
@@ -569,6 +626,9 @@
           <div class="form-actions">
             <button type="submit" class="button button-primary">Request access</button>
           </div>
+          <p class="form-reassurance">
+            We are working with a small number of early design partners.
+          </p>
         </form>
       </section>
     </main>
